@@ -41,51 +41,34 @@ class EstudianteURL implements Estudiante{
 /*Ahora se require de un creador el cual se encarga de generar una clase 
 abstracta la cual forzara a sobre escribir los metodos y funciones de la clase
 se le conoce como creador*/
-
 abstract class RegistroEstudiante{
-    public abstract Estudiante creatEstudiante();
+    public abstract Estudiante crearEstudiante();
     
     public void procesarInscripcion(){
         Estudiante estudiante = crearEstudiante();
         estudiante.inscribirse();
-    }
-
-    private Estudiante crearEstudiante() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 
 //Ahora se generaran creadores concretos o especificos para cada nueva instancia
 class RegistroEstudiantesUMG extends RegistroEstudiante{
 
+    @Override
     public Estudiante crearEstudiante(){
         return new EstudianteUMG();   
-    }
-
-    @Override
-    public Estudiante creatEstudiante() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 class RegistroEstudiantesUSAC extends RegistroEstudiante{
     
+    @Override
     public Estudiante crearEstudiante(){
         return new EstudianteUSAC();   
     }
-
-    @Override
-    public Estudiante creatEstudiante() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
 class RegistroEstudiantesURL extends RegistroEstudiante{
+    @Override
     public Estudiante crearEstudiante(){
         return new EstudianteURL();   
-    }
-
-    @Override
-    public Estudiante creatEstudiante() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 
