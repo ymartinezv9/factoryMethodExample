@@ -51,21 +51,21 @@ abstract class RegistroEstudiante{
 }
 
 //Ahora se generaran creadores concretos o especificos para cada nueva instancia
-class RegistroEstudiantesUMG extends RegistroEstudiante{
+class RegistroEstudianteUMG extends RegistroEstudiante{
 
     @Override
     public Estudiante crearEstudiante(){
         return new EstudianteUMG();   
     }
 }
-class RegistroEstudiantesUSAC extends RegistroEstudiante{
+class RegistroEstudianteUSAC extends RegistroEstudiante{
     
     @Override
     public Estudiante crearEstudiante(){
         return new EstudianteUSAC();   
     }
 }
-class RegistroEstudiantesURL extends RegistroEstudiante{
+class RegistroEstudianteURL extends RegistroEstudiante{
     @Override
     public Estudiante crearEstudiante(){
         return new EstudianteURL();   
@@ -74,7 +74,7 @@ class RegistroEstudiantesURL extends RegistroEstudiante{
 
 
 
-public class FactoryMethodExample {
+public class main {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
