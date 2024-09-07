@@ -61,17 +61,31 @@ class RegistroEstudiantesUMG extends RegistroEstudiante{
     public Estudiante crearEstudiante(){
         return new EstudianteUMG();   
     }
+
+    @Override
+    public Estudiante creatEstudiante() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 class RegistroEstudiantesUSAC extends RegistroEstudiante{
-    @Override
+    
     public Estudiante crearEstudiante(){
         return new EstudianteUSAC();   
     }
+
+    @Override
+    public Estudiante creatEstudiante() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 class RegistroEstudiantesURL extends RegistroEstudiante{
-    @Override
     public Estudiante crearEstudiante(){
         return new EstudianteURL();   
+    }
+
+    @Override
+    public Estudiante creatEstudiante() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 

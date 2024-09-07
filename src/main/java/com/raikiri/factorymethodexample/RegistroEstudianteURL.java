@@ -8,9 +8,9 @@ package com.raikiri.factorymethodexample;
  *
  * @author lutwi
  */
-public class RegistroEstudianteUMG extends RegistroEstudiante {
+public class RegistroEstudianteURL extends RegistroEstudiante {
 
-    public RegistroEstudianteUMG() {
+    public RegistroEstudianteURL() {
     }
 
     @Override
